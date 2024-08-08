@@ -1,0 +1,87 @@
+isi semua database "zetflix"
+
+isi dari tb_film
+id_film	judul deskripsi tahun sutradara pemeran	genre_id rating	poster harga link_film
+
+isi dari tb_user
+id_user nama email password tanggal_lahir alamat foto
+
+isi dari tb_sewafilm
+id_sewa	id_user	id_film	tanggal_sewa tanggal_kembali
+
+isi dari tb_ulasan
+id_ulasan id_user id_film ulasan rating	tanggal_ulasan id_balasan id_admin
+
+isi dari tb_filmfavorit
+id_favorit id_user id_film	
+
+isi dari tb_genre
+id_genre nama_genre
+
+isi dari tb_admin
+id_admin nama email password foto
+
+isi dari tb_nota
+id_nota	id_user	id_film	harga_film nominal_bayar uang_kembalian	tanggal_bayar metode_pembayaran tanggal_kembali jam_bayar jam_kembali
+
+
+zetflix/
+│
+├── index.php
+├── login.php
+├── koneksi.php
+├── register.php
+├── detail_film.php
+├── search.php
+│
+├── admin/
+│   ├── admin_login.php
+│   ├── admin_logout.php
+│   ├── admin_login_proses.php
+│   ├── index.php
+│   ├── kelola_user.php
+│   ├── kelola_film.php
+│   ├── kelola_ulasan.php
+│   ├── kelola_sewafilm.php
+│   ├── hapus_sewafilm.php
+│   ├── hapus_user.php
+│   ├── hapus_ulasan.php
+│   ├── hapus_film.php
+│   ├── edit_film.php
+│   ├── edit_user.php
+│   ├── edit_sewafilm.php
+│   ├── tambah_user.php
+│   ├── tambah_ulasan.php
+│
+├── user/
+│   ├── user_nota.php
+│   ├── user_pembayaran.php
+│   ├── user_sewafilm.php
+│   ├── user_favoritfilm.php
+│   ├── user_ulasan.php
+│   ├── user_profil.php
+│   ├── user_editprofil.php
+│   ├── user_updatefavoritfilm.php
+│   ├── user_login.php
+│   ├── user_logout.php
+│   ├── tonton_film.php
+│   ├── index.php
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   │   	 ├──styledetailfilm.css
+│   │   	 ├──stylepembayaran.css
+│   │   	 ├──styletonton.css
+│   │   	 ├──stylenota.css
+│   ├── js/
+│   │   └── script.js
+│
+├── include/
+│   ├── footer.php
+│   ├── navbar.php
+│   └── js.php
+└── uploads/
+    ├── img_film/
+    ├── img_foto_user/
+    └── img_foto_admin/

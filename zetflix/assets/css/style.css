@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer, nav {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* CSS for Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    width: 60px;  /* Adjust the width as needed */
+    height: auto;
+    margin-right: 15px;  /* Adjust the margin as needed */
+}
+
+.navbar-brand .brand-name {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-menu {
+    font-size: larger;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar-menu li {
+    display: inline;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar-menu li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.navbar-menu li a i {
+    margin-right: 8px;
+}
+
+/* CSS for Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.footer .admin-link {
+    position: absolute;
+    left: 20px;
+}
+
+.footer .admin-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .admin-link a:hover {
+    text-decoration: underline;
+}
+
+

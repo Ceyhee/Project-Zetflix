@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.film-info h1 {
+    text-align: left;
+    font-size: 50px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.film-info h1 img {
+    max-width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.film-info h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.film-info,
+.payment-details {
+    font-size: 20px;
+    text-align: left;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.film-info h3,
+.payment-details h3, h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.film-info p,
+.payment-details p {
+    margin: 5px 0;
+}
+
+.film-info h5 {
+    text-align: center;
+    margin-bottom: -10px;
+    font-size: 30px;
+}
+
+.film-poster img {
+    max-width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-container a.watch-now-btn {
+    background-color: #ffc107; /* Warna kuning untuk tombol "Nonton Sekarang" */
+    color: #fff;
+}
+
+.button-container a.home-btn {
+    background-color: #28a745; /* Warna hijau untuk tombol "Kembali ke Beranda" */
+    color: #fff;
+}
+
+.button-container a:hover {
+    filter: brightness(90%);
+}
+
+
+.divider {
+    color: green;
+    font-size: 40px;
+    position: relative;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: black;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.fa-icon {
+    margin-right: 0px;
+}

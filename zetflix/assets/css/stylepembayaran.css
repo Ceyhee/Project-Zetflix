@@ -1,0 +1,266 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 10px auto;
+    width: 60%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.film-info {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.film-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.film-info p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.film-poster {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.film-poster img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+input[type="password"],
+input[type="text"],
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.payment-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.payment-options h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.payment-options input[type="radio"] {
+    display: none;
+}
+
+.payment-options label {
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.payment-options input[type="radio"]:checked + label {
+    transform: scale(0.9);
+    background-color: rgba(0,0,0,0.1);
+}
+
+.total-payment {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.modal {
+    text-align: left;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    padding: 10px;
+    width: 10%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #640b0b;
+    transform: scale(1.05);
+}
+
+.payment-options h3 {
+    position: relative;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: -0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea,
+form input[type="file"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form input[type="file"] {
+    padding: 3px;
+}
+
+form img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+.divider {
+    color: green;
+    font-size: 40px;
+    position: relative;
+    margin: 10px 0;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.fa-icon {
+    margin-right: 0px;
+}
